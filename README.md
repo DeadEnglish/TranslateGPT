@@ -20,23 +20,23 @@ Requirements for the software and other tools to build, test and push
 ### Installing
 
 install depencandies with bun
-
+```bash
     bun install
-
+```
 add your openAI api key to the `.env` file
-
+```bash
     OPENAI_API_KEY=your-api-key
-
+```
 add you default language file, currently this is set to "english" and should be in the `en.jso` file
 
 update the languages to the ones you support
-
+```typescript
     const languages = ["en", "es", "fr", "de", "it", "ja", "ko", "pt", "ru", "zh"];
-
+```
 run the `index.ts` file
-
+```bash
     bun run index.ts
-
+```
 
 ## Built With
 
