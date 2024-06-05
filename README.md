@@ -27,8 +27,12 @@ add your openAI api key to the `.env` file
 ```bash
     OPENAI_API_KEY=your-api-key
 ```
-add you default language file, currently this is set to "english" and should be in the `en.jso` file
-
+add you default language file, currently this is set to "english" and should be in the `en.json` file
+```json
+    {
+        "key": "value"
+    }
+```
 update the languages to the ones you support
 ```typescript
     const languages = ["en", "es", "fr", "de", "it", "ja", "ko", "pt", "ru", "zh"];
