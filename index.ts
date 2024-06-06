@@ -23,13 +23,13 @@ const getTranslations = async () => {
       model: "gpt-4o",
     });
 
-    const message = chatCompletion?.choices[0].message.content?.replace(
+    const message = chatCompletion.choices[0].message.content?.replace(
       /```json\n(.*?)\n```/g,
       "$1",
     );
 
     Bun.write(
-      `${language.label}.json`,
+      `translations/${language.label}.json`,
       message || "ERROR COULD NOT GET TRANSLATION RESPONSE",
     );
   });
